@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Switch Statement</title>
+    <script>
+        function myfun() {
+            var choice = document.getElementById("choices").value;
+            switch (choice) {
+                case "add": var a = 10;
+                    var b = 20;
+                    c = a + b;
+                    document.write("The sum of two number is" + c);
+                    break;
+                case "sub": var a = 10;
+                    var b = 20;
+                    c = a - b;
+                    document.write("The subtraction of two number is" + c);
+                    break;
+                case "mul": var a = 10;
+                    var b = 20;
+                    c = a * b;
+                    document.write("The multiplication of two number is" + c);
+                    break;
+                default: alert("Worng Input");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Enter Your Choice</h3>
+    <ul>
+        <li>Add</li>
+        <li>Mult</li>
+        <li>Sub</li>
+    </ul>
+    <br>
+    <form action="">
+        <input type="text" name="" id="choices">
+        <button onclick="myfun()">Click Me</button>
+    </form>
+</body>
+
+</html>

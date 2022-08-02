@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array</title>
+    <script>
+        let a = ['Sachin', 'Ayush', 'Manish'];
+        document.write(a);
+        document.write("<br>");
+        document.write("The array length is " + a.length + "<br>");
+        document.write("Sort method --> " + a.sort() + "<br>");
+        a.push("Flat Combine");
+        document.write("Push Method --> " + a + "<br>");
+        a.pop();
+        document.write("Pop Method -->" + a + "<br>");
+        a.shift();
+        document.write("Shift Method -->" + a + "<br>");
+        a.unshift("Ayush");
+        document.write("Unshift Method -->" + a + "<br>");
+        a.reverse();
+        document.write("Reverse method -->" + a + "<br>");
+        let check = Array.isArray(a);
+        document.write(check + "<br>");
+        let b = ['Tower', 'Value'];
+        let c = a.concat(b);
+        document.write(c + "<br>");
+        document.write(a.indexOf("Sachin"));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

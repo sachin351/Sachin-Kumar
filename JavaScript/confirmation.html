@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confirmation Box</title>
+    <script>
+        function confirmations(){
+            let confirmation = confirm("Do you want to visit this page.");
+            if(confirmation == true){
+                console.log("working1");
+                window.open("https://www.wikipedia.org/");
+                console.log("working2");
+            }else{
+                console.log("working3");
+                document.write("please visit again");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="confirmations()">Click Me</button>
+</body>
+</html>

@@ -1,9 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+    </body>
+
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Dom</title>
+    <title>Document Access</title>
 </head>
+
 <body>
-    
+    <h1 id="test1">My First Heading</h1>
+    <p class="test1">My first paragraph.</p>
+    <p class="test1">My second paragraph.</p>
+    <p class="test3">My first paragraph.</p>
+    <p class="test4">My first paragraph.</p>
+    <script>
+        // how to access element by Id
+        var a = document.getElementById("test1").innerHTML;
+        document.write(a);
+        document.write("<br>");
+        // how to access element by Class
+        var b = document.getElementsByClassName("test1")[1].innerHTML;
+        document.write(b);
+        document.write("<br>");
+        // how to access element by tag
+        var c = document.getElementsByTagName("p")[1].innerHTML;
+        document.write(c);
+        document.write("<br>");
+        // How to access First element
+        var d = document.querySelector("p").innerHTML;
+        document.write(d);
+        document.write("<br>");
+        var e = document.querySelectorAll("p")[3].innerText;
+        document.write(e);
+    </script>
 </body>
+
 </html>

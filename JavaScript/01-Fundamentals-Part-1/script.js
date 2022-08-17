@@ -37,11 +37,32 @@ console.log(markBMI, johnBMI);
 let markhigherBMI = markBMI > johnBMI;
 console.log(markhigherBMI);
 
-const firstName = "Sachin";
-const job =  "Software Engg";
-const birthYear = 1998;
-console.log("I am " + firstName + " a " + job + " and my birthdate is " + birthYear);
-// called template string
-sachinNew = `I am ${firstName} a ${job} and my birthdate is ${birthYear}.`;
-console.log(sachinNew);
-console.log(`this is\n\ multiple line`);
+// const firstName = "Sachin";
+// const job =  "Software Engg";
+// const birthYear = 1998;
+// console.log("I am " + firstName + " a " + job + " and my birthdate is " + birthYear);
+// // called template string
+// sachinNew = `I am ${firstName} a ${job} and my birthdate is ${birthYear}.`;
+// console.log(sachinNew);
+// console.log(`this is\n\ multiple line`);
+
+// let age = 18;
+// let isEnough = age <= 18;
+// if (isEnough === true) {
+//     console.log("Yor are Eligible");
+// }
+// else {
+//     console.log("You are not eligible");
+// }
+if (markBMI > johnBMI) {
+    console.log(`mark BMI is greater than jhon BMI. The diffrence is ${markBMI - johnBMI}`);
+}
+else {
+    console.log(`john BMI is greater than mark BMI. The diffrence is ${johnBMI - markBMI}`);
+}
+// Type conversion
+const inputYear = '1991';
+console.log(Number(inputYear) + 18);
+console.log(inputYear + 18);
+n = '10' + 2;
+console.log(n);

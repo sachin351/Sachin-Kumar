@@ -38,3 +38,7 @@ const untilRetierment = (birthyear, firstName) => {
 }
 console.log(untilRetierment(1998, 'Sachin'));
 console.log(untilRetierment(1995, 'Manish'));
+
+
+
+// call funtion to another function

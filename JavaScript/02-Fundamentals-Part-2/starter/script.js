@@ -26,5 +26,15 @@
 // }
 // const age2 = calcAge2(1998);
 // console.log(age2);
-const age = birthYear => 2022 - birthYear;
-console.log(1998);
+
+// Arrow Function
+// const age = birthYear => 2022 - birthYear;
+// const ageYear =  age(1998);
+// console.log(ageYear);
+const untilRetierment = (birthyear, firstName) => {
+    const birthage = 2022 - birthyear;
+    const retiermentAge = 65 - birthage;
+    return `${firstName} retires in ${retiermentAge} years.`;
+}
+console.log(untilRetierment(1998, 'Sachin'));
+console.log(untilRetierment(1995, 'Manish'));

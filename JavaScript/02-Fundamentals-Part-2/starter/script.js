@@ -1,0 +1,30 @@
+'use strict';
+// function name(){
+//     console.log('I am Sachin Kumar');
+// }
+// name();
+
+// function fruits(apple, orange){
+//     console.log(5, 0);
+//     const juice = `This is ${apple} apple juice and ${orange} orange juice.`;
+//     return(juice);
+// }
+// console.log(fruits(5, 0));
+// console.log(fruits(4,5));
+
+// function declaration
+// function calcAge(birthyear) {
+//     const age = 2022 - birthyear;
+//     return age;
+// }
+// console.log(calcAge(1997));
+// let age;
+
+// const calcAge2 =  function (birthyear){
+//     const age = 2022 - birthyear;
+//     return age;
+// }
+// const age2 = calcAge2(1998);
+// console.log(age2);
+const age = birthYear => 2022 - birthYear;
+console.log(1998);

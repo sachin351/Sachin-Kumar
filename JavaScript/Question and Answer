@@ -1,0 +1,4 @@
+1. What is StrictMode?
+   JavaScript strict mode prevents the use of undeclared variables. When a script includes this declaration at the start, it takes effect for all code contained in the script (global scope). Programmers should also be aware that making the declaration within a function only provides local scope for strict mode.
+2. Use of StrictMode?
+   JavaScript will generate a new global variable anytime a new one is named in a function. In strict mode, this will generate an error, since you cannot create a new variable in strict mode. The benefit is that a mistyped variable name will not create a new one, which can eliminate errors caused by typos.

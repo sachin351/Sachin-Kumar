@@ -41,4 +41,8 @@ console.log(untilRetierment(1995, 'Manish'));
 
 
 
-// call funtion to another function
+// coding challenge #1
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+const scoreDolhins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolhins, scoreKoalas);

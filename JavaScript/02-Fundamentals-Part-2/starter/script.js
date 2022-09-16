@@ -31,18 +31,27 @@
 // const age = birthYear => 2022 - birthYear;
 // const ageYear =  age(1998);
 // console.log(ageYear);
-const untilRetierment = (birthyear, firstName) => {
-    const birthage = 2022 - birthyear;
-    const retiermentAge = 65 - birthage;
-    return `${firstName} retires in ${retiermentAge} years.`;
+// const untilRetierment = (birthyear, firstName) => {
+//     const birthage = 2022 - birthyear;
+//     const retiermentAge = 65 - birthage;
+//     return `${firstName} retires in ${retiermentAge} years.`;
+// }
+// console.log(untilRetierment(1998, 'Sachin'));
+// console.log(untilRetierment(1995, 'Manish'));
+
+
+
+// // coding challenge #1
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const scoreDolhins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolhins, scoreKoalas);
+
+const perOne = (frnd1, callfrnd) => {
+    console.log('Friend one is calling');
+    callfrnd();
 }
-console.log(untilRetierment(1998, 'Sachin'));
-console.log(untilRetierment(1995, 'Manish'));
-
-
-
-// coding challenge #1
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-const scoreDolhins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolhins, scoreKoalas);
+const perTwo = (frnd2) => {
+    console.log('friend two is calling');
+}
+perOne('Sachin', perTwo);

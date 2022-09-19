@@ -47,27 +47,23 @@
 // const scoreKoalas = calcAverage(65, 54, 49);
 // console.log(scoreDolhins, scoreKoalas);
 
-const perOne = (frnd1, callfrnd) => {
-    console.log(callfrnd);
-    console.log('Friend one is calling');
-    callfrnd();
-}
-const perTwo = (frnd2) => {
-    console.log('friend two is calling');
-}
-perOne('Sachin', perTwo);
+// const perOne = (frnd1, callfrnd) => {
+//     console.log(callfrnd);
+//     console.log('Friend one is calling');
+//     callfrnd();
+// }
+// const perTwo = (frnd2) => {
+//     console.log('friend two is calling');
+// }
+// perOne('Sachin', perTwo);
 
 // array function
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 }
 let bills = [125, 555, 44];
-// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 let tips = [calcTip(bills)];
-// console.log(tips);
-// console.log(bills, tips);
 for (tips = 0; tips < bills.length; tips++) {
-    console.log(bills[tips]);
+    console.log( `This is tip amount ${calcTip(bills[tips])}`);
+    console.log(`This is total bill amount ${calcTip(bills[tips]) + bills[tips]}`);
 }
-// const totals = `${bills[0] + tips[0]}, ${bills[1] + tips[1]}, ${bills[2] + tips[2]}`;
-// console.log(totals);

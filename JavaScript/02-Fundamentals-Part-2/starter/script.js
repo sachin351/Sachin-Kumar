@@ -48,6 +48,7 @@
 // console.log(scoreDolhins, scoreKoalas);
 
 const perOne = (frnd1, callfrnd) => {
+    console.log(callfrnd);
     console.log('Friend one is calling');
     callfrnd();
 }

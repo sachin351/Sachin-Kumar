@@ -58,12 +58,21 @@
 // perOne('Sachin', perTwo);
 
 // array function
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+// }
+// let bills = [125, 555, 44];
+// let tips;
+// for (tips = 0; tips < bills.length; tips++) {
+//     console.log( `This is tip amount ${calcTip(bills[tips])}`);
+//     console.log(`This is total bill amount ${calcTip(bills[tips]) + bills[tips]}`);
+// }
+const objectOne = {
+    firstName : 'Sachin',
+    lastName : 'Kumar',
+    age : 2022 - 1998,
+    job : 'Software Enggineer',
+    friends : ['Manish', 'Ayush']
 }
-let bills = [125, 555, 44];
-let tips = [calcTip(bills)];
-for (tips = 0; tips < bills.length; tips++) {
-    console.log( `This is tip amount ${calcTip(bills[tips])}`);
-    console.log(`This is total bill amount ${calcTip(bills[tips]) + bills[tips]}`);
-}
+console.log(objectOne);
+console.log(objectOne.lastName);

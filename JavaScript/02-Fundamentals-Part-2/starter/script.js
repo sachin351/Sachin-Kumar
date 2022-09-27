@@ -72,7 +72,29 @@ const objectOne = {
     lastName : 'Kumar',
     age : 2022 - 1998,
     job : 'Software Enggineer',
-    friends : ['Manish', 'Ayush']
+    friends : ['Manish', 'Ayush'],
+    fullName : function (){
+        return (`${this.firstName} ${this.lastName}`)
+    }
 }
 console.log(objectOne);
 console.log(objectOne.lastName);
+console.log(objectOne['lastName']);
+
+const nameKey = 'Name';
+// 
+console.log(objectOne['first' + nameKey]);
+console.log(objectOne.fullName());
+
+// const interestIn = prompt('What do you want to know about Sachin?');
+// console.log(interestIn);
+// if(objectOne[interestIn]){
+//     console.log(objectOne[interestIn]);
+// }
+// else{
+//     console.log('Worng Request');
+// }
+
+objectOne.address =  'Meerut';
+console.log(objectOne);
+

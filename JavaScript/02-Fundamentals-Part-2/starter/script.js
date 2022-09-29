@@ -67,24 +67,24 @@
 //     console.log( `This is tip amount ${calcTip(bills[tips])}`);
 //     console.log(`This is total bill amount ${calcTip(bills[tips]) + bills[tips]}`);
 // }
-const objectOne = {
-    firstName : 'Sachin',
-    lastName : 'Kumar',
-    age : 2022 - 1998,
-    job : 'Software Enggineer',
-    friends : ['Manish', 'Ayush'],
-    fullName : function (){
-        return (`${this.firstName} ${this.lastName}`)
-    }
-}
-console.log(objectOne);
-console.log(objectOne.lastName);
-console.log(objectOne['lastName']);
+// const objectOne = {
+//     firstName : 'Sachin',
+//     lastName : 'Kumar',
+//     age : 2022 - 1998,
+//     job : 'Software Enggineer',
+//     friends : ['Manish', 'Ayush'],
+//     fullName : function (){
+//         return (`${this.firstName} ${this.lastName}`)
+//     }
+// }
+// console.log(objectOne);
+// console.log(objectOne.lastName);
+// console.log(objectOne['lastName']);
 
-const nameKey = 'Name';
-// 
-console.log(objectOne['first' + nameKey]);
-console.log(objectOne.fullName());
+// const nameKey = 'Name';
+// // 
+// console.log(objectOne['first' + nameKey]);
+// console.log(objectOne.fullName());
 
 // const interestIn = prompt('What do you want to know about Sachin?');
 // console.log(interestIn);
@@ -95,6 +95,17 @@ console.log(objectOne.fullName());
 //     console.log('Worng Request');
 // }
 
-objectOne.address =  'Meerut';
-console.log(objectOne);
+// objectOne.address =  'Meerut';
+// console.log(objectOne);
 
+// challenge 3
+const mark = {
+    fullName : 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+}
+const john ={
+    fullName : 'John Smith',
+    mass : 92,
+    height : 1.69,
+}

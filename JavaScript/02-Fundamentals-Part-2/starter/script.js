@@ -99,25 +99,43 @@
 // console.log(objectOne);
 
 // challenge 3
-const mark = {
-    fullName : 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI : function(){
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
-};
-const john ={
-    fullName : 'John Smith',
-    mass : 92,
-    height : 1.69,
-    calcBMI : function(){
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
-};
-mark.calcBMI();
-john.calcBMI();
-console.log(mark.bmi, john.bmi);
-console.log(`"John Smith's BMI (${john.bmi}) is higher than Mark Miller (${mark.bmi})!"`);
+// const mark = {
+//     fullName : 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI : function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// };
+// const john ={
+//     fullName : 'John Smith',
+//     mass : 92,
+//     height : 1.69,
+//     calcBMI : function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// };
+// mark.calcBMI();
+// john.calcBMI();
+// console.log(mark.bmi, john.bmi);
+// if(john.bmi > mark.bmi){
+//     console.log(`"John Smith's BMI (${john.bmi}) is higher than Mark Miller (${mark.bmi})!"`);
+// }
+// else{
+//     console.log(`"Mark Miller BMI (${john.bmi}) is higher than John Smith's (${mark.bmi})!"`);
+// }
+// for(let rep = 1; rep <= 10; rep++){
+//     console.log(`Lifting weight repetition ${rep}`);
+// }
+const objectOne = [
+    'Sachin',
+    'Kumar',
+    2022 - 1998,
+    'Software Enggineer',
+     ['Manish', 'Ayush'],
+];
+for(let i=0; i< 4; i++){
+    console.log(objectOne[i]);
+}

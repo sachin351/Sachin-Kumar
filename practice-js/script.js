@@ -19,6 +19,12 @@ const c = 7;
 const triangle =  (a+b+c) / 2;
 console.log(triangle);
 // Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
-const string = reverseString('w3resource');
-console.log(string);
+function reverseString(str) {
+   let newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+console.log(reverseString('hello'));
 

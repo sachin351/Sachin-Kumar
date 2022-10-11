@@ -27,3 +27,12 @@ function reverseString(str) {
     return newString;
 }
 console.log(reverseString('hello'));
+
+let cabOne = 30;
+let cabTwo =  65;
+if (cabOne < cabTwo){
+    console.log('Chef book cab one');
+}
+else{
+    console.log('Chef book cab two');
+}

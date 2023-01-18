@@ -123,4 +123,4 @@ GOOD LUCK 😀
 let billamount = 275;
 const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
 let totalBill = (billamount + tip);
-console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`)
+console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`); 

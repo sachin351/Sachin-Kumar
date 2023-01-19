@@ -120,7 +120,25 @@ GOOD LUCK 😀
 // let totalBill = (billamount + tip);
 // console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`);
 
-let billamount = 275;
-const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
-let totalBill = (billamount + tip);
-console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`)
+// let billamount = 275;
+// const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
+// let totalBill = (billamount + tip);
+// console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`);
+function btn() {
+    let btnShow = document.getElementsByClassName("btn");
+    Array.from(btnShow).forEach((data, index) => {
+        console.log(data);
+        if (btnShow.style.display === 'none') {
+            btnShow.style.display = 'block';
+        }
+        else {
+            btnShow.style.display = 'none';
+        }
+    })
+    // if (btnShow.style.display === 'none') {
+    //     btnShow.style.display = 'block';
+    // }
+    // else {
+    //     btnShow.style.display = 'none';
+    // }
+}

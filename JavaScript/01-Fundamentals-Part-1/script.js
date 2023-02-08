@@ -124,25 +124,33 @@ GOOD LUCK 😀
 // const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
 // let totalBill = (billamount + tip);
 // console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`);
-function btn() {
-    let btnShow = document.getElementsByClassName("btn");
-    Array.from(btnShow).forEach((data, index) => {
-        console.log(data);
-        if (btnShow.style.display === 'none') {
-            btnShow.style.display = 'block';
-        }
-        else {
-            btnShow.style.display = 'none';
-        }
-    })
-    // if (btnShow.style.display === 'none') {
-    //     btnShow.style.display = 'block';
-    // }
-    // else {
-    //     btnShow.style.display = 'none';
-    // }
-}
-let billamount = 275;
-const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
-let totalBill = (billamount + tip);
-console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`); 
+// function btn() {
+//     let btnShow = document.getElementsByClassName("btn");
+//     Array.from(btnShow).forEach((data, index) => {
+//         console.log(data);
+//         if (btnShow.style.display === 'none') {
+//             btnShow.style.display = 'block';
+//         }
+//         else {
+//             btnShow.style.display = 'none';
+//         }
+//     })
+//     if (btnShow.style.display === 'none') {
+//         btnShow.style.display = 'block';
+//     }
+//     else {
+//         btnShow.style.display = 'none';
+//     }
+// }
+// let billamount = 275;
+// const tip = billamount >= 50 && billamount <= 300 ? billamount * 0.15 : billamount * 0.20;
+// let totalBill = (billamount + tip);
+// console.log(`The bill was ${billamount},the tip was ${tip} and the total value is ${totalBill}.`);
+// function addition (num1){
+//     return num1*4;
+// }
+// function multiply(num2){
+//     const multiple = adition(num2);
+//     return multiple;
+// }
+// console.log(`This is number ${addition(3)}`);

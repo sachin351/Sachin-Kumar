@@ -129,13 +129,30 @@
 // for(let rep = 1; rep <= 10; rep++){
 //     console.log(`Lifting weight repetition ${rep}`);
 // }
-const objectOne = [
-    'Sachin',
-    'Kumar',
-    2022 - 1998,
-    'Software Enggineer',
-     ['Manish', 'Ayush'],
-];
-for(let i=0; i< 4; i++){
-    console.log(objectOne[i]);
+// const objectOne = [
+//     'Sachin',
+//     'Kumar',
+//     2022 - 1998,
+//     'Software Enggineer',
+//      ['Manish', 'Ayush'],
+// ];
+// for(let i=0; i< 4; i++){
+//     console.log(objectOne[i]);
+// }
+
+const calcAverage = (a,b,c) => (a+b+c)/2;
+const scoreDolhins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolhins, scoreKoalas);
+const checkWinner =  function (avgDolphins, avgKoalas){
+    if (avgDolphins >= 2*avgKoalas){
+        console.log(`Dophins win (${avgDolphins} vs. ${avgKoalas})`);
+    }
+    else if (avgKoalas >= 2*avgDolphins){
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    }
+    else{
+        console.log('No Teams Wins..');
+    }
 }
+checkWinner(scoreDolhins, scoreKoalas);

@@ -140,19 +140,44 @@
 //     console.log(objectOne[i]);
 // }
 
-const calcAverage = (a,b,c) => (a+b+c)/2;
-const scoreDolhins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolhins, scoreKoalas);
-const checkWinner =  function (avgDolphins, avgKoalas){
-    if (avgDolphins >= 2*avgKoalas){
-        console.log(`Dophins win (${avgDolphins} vs. ${avgKoalas})`);
-    }
-    else if (avgKoalas >= 2*avgDolphins){
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    }
-    else{
-        console.log('No Teams Wins..');
-    }
-}
-checkWinner(scoreDolhins, scoreKoalas);
+// const calcAverage = (a,b,c) => (a+b+c)/2;
+// const scoreDolhins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolhins, scoreKoalas);
+// const checkWinner =  function (avgDolphins, avgKoalas){
+//     if (avgDolphins >= 2*avgKoalas){
+//         console.log(`Dophins win (${avgDolphins} vs. ${avgKoalas})`);
+//     }
+//     else if (avgKoalas >= 2*avgDolphins){
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+//     }
+//     else{
+//         console.log('No Teams Wins..');
+//     }
+// }
+// checkWinner(scoreDolhins, scoreKoalas);
+
+// function calcTip(bill){
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+// }
+// let bills = [125, 555, 44];
+// let tips;
+// for (tips = 0; tips < bills.length; tips++) {
+//     console.log( `This is tip amount ${calcTip(bills[tips])}`);
+//     console.log(`This is total bill amount ${calcTip(bills[tips]) + bills[tips]}`);
+// }
+// const joans = {
+//     firstName:'Sachin',
+//     lastName: 'Kumar',
+//     job: 'Software Engginner',
+//     birthYear: 1998,
+//     calcAge : function(birthYear){
+//         return 2023 - birthYear;
+//     }
+// }
+// const calcAge = function(birthYear){
+//     return 2023 - birthYear;
+// }
+// console.log(joans.calcAge([1998]));
+// console.log(calcAge(1998));
+// console.log(`${joans.firstName} is`);

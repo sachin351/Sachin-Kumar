@@ -181,3 +181,33 @@
 // console.log(joans.calcAge([1998]));
 // console.log(calcAge(1998));
 // console.log(`${joans.firstName} is`);
+// const john = {
+//     fullName: 'John Smith',
+//     johnWeight: 78,
+//     johnHeight: 1.69,
+//     johnBMI: function () {
+//         this.bmi = this.johnWeight / this.johnHeight ** 2;
+//         return this.bmi;
+//     }
+// }
+// const mark = {
+//     fullName: 'John Smith',
+//     markWeight: 92,
+//     markHeight: 1.95,
+//     markBMI: function () {
+//         this.bmi = this.markWeight / this.markHeight ** 2;
+//         return this.bmi;
+//     }
+// }
+// john.johnBMI();
+// mark.markBMI();
+// console.log(john['bmi']);
+// console.log(mark['bmi']);
+// if (mark.bmi > john.bmi) {
+//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+// } else if (john.bmi > mark.bmi) {
+//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+// }
+for(let rep=1; rep<=10; rep++){
+    console.log(`Lifting weight repetition ${rep}`);
+}

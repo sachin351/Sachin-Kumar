@@ -208,6 +208,17 @@
 // } else if (john.bmi > mark.bmi) {
 //     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
 // }
-for(let rep=1; rep<=10; rep++){
-    console.log(`Lifting weight repetition ${rep}`);
+// for(let rep=1; rep<=10; rep++){
+//     console.log(`Lifting weight repetition ${rep}`);
+// }
+const bills=[22,295,176,440,37,105,10,1100,86,52];
+const tips=[];
+const calcTip = function(bill){
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 }
+for(let i=0; i<bills.length; i++){
+    const tip=(calcTip(bills[i]));
+    console.log(tip);
+    tips.push[tip];
+}
+console.log(bills);

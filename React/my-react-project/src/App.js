@@ -31,7 +31,6 @@ function App() {
   return (
     <div>
       <h2>Let's Start</h2>
-      
       <Expenses items={expenses}></Expenses>
     </div>
   );

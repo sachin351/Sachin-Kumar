@@ -1,9 +1,11 @@
-import './App.css';
+import { useState } from 'react';
 import Expenses from './component/Expenses';
 import NewExpense from './NewExpense/NewExpense';
 
+import './App.css';
+
 function App() {
-  const expenses = [
+  const [expenses, setExpenses] = useState([
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -28,10 +30,15 @@ function App() {
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-  ];
+  ]);
+  const addNewExpense = (expense) => {
+    console.log('expense', expense)
+    console.log("expenses", expenses[0])
+    setExpenses(prev => [...prev, { title: expense.enterTitle, amount: +expense.enterAmount, date: expense.enterDate, id: Math.random() }])
+  }
   return (
     <div>
-      <NewExpense />
+      <NewExpense onExpenseAdd={addNewExpense} />
       <Expenses items={expenses}></Expenses>
     </div>
   );

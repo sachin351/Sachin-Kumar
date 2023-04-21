@@ -31,7 +31,12 @@ const ExpenseForm = ({ onExpenseAdd }) => {
     };
     const submitHandler = (event) => {
         event.preventDefault();
-        onExpenseAdd(userInput)
+        onExpenseAdd(userInput);
+        setUserInput({
+            enterTitle:'',
+            enterAmount:'',
+            enterDate: '',
+        })
     }
     
     return (
@@ -39,15 +44,15 @@ const ExpenseForm = ({ onExpenseAdd }) => {
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label>Title</label>
-                    <input type="text" value={userInput} onChange={titleChangeHandler} />
+                    <input type="text" value={userInput.enterTitle} onChange={titleChangeHandler} />
                 </div>
                 <div className="new-expense__control">
                     <label>Amount</label>
-                    <input type="number" value={userInput} min="0.01" step="0.01" onChange={amountChnageHandler} />
+                    <input type="number" value={userInput.enterAmount} min="0.01" step="0.01" onChange={amountChnageHandler} />
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
-                    <input type="date" value={userInput} min="2019-01-01" max="2022-12-31" onChange={dateChnageHandler} />
+                    <input type="date" value={userInput.enterDate} min="2019-01-01" max="2022-12-31" onChange={dateChnageHandler} />
                 </div>
             </div>
             <div className="new-expense__actions">

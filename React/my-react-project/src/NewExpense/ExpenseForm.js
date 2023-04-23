@@ -33,12 +33,12 @@ const ExpenseForm = ({ onExpenseAdd }) => {
         event.preventDefault();
         onExpenseAdd(userInput);
         setUserInput({
-            enterTitle:'',
-            enterAmount:'',
-            enterDate: '',
+            enterTitle: '',
+            enterAmount: '',
+            enterDate: new Date(''),
         })
     }
-    
+
     return (
         <form onSubmit={submitHandler}>
             <div className="new-expense__controls">

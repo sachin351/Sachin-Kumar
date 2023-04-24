@@ -7,7 +7,7 @@ const ExpenseForm = ({ onExpenseAdd }) => {
     const [userInput, setUserInput] = useState({
         enterTitle: '',
         enterAmount: '',
-        enterDate: '',
+        enterDate: "",
     });
     const titleChangeHandler = (event) => {
         setUserInput({
@@ -24,18 +24,20 @@ const ExpenseForm = ({ onExpenseAdd }) => {
     };
     const dateChnageHandler = (event) => {
         // setEnteredDate(event.target.value);
+        console.log("====>",event.target.value)
         setUserInput({
             ...userInput,
-            enterDate: new Date(event.target.value),
+            enterDate: event.target.value,
         })
     };
     const submitHandler = (event) => {
         event.preventDefault();
+
         onExpenseAdd(userInput);
         setUserInput({
             enterTitle: '',
             enterAmount: '',
-            enterDate: new Date(''),
+            enterDate: '',
         })
     }
 
@@ -52,7 +54,7 @@ const ExpenseForm = ({ onExpenseAdd }) => {
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
-                    <input type="date" value={userInput.enterDate} min="2019-01-01" max="2022-12-31" onChange={dateChnageHandler} />
+                    <input type="date" value={userInput.enterDate} onChange={dateChnageHandler} />
                 </div>
             </div>
             <div className="new-expense__actions">

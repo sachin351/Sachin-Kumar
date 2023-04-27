@@ -1,8 +1,10 @@
+import ExpensesFilter from "./ExpensesFilter";
 import ExpenseItem from "./ExpenseItem";
 import './Expenses.css';
 function Expenses(props) {
   return (
     <div className='expenses'>
+      <ExpensesFilter />
       {props.items.map((item => (
         <ExpenseItem
           key={item.id}

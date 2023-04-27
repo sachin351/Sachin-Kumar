@@ -15,6 +15,7 @@ const ExpenseForm = ({ onExpenseAdd }) => {
             enterTitle: event.target.value,
         });
     };
+    
     const amountChnageHandler = (event) => {
         // setEnteredAmount(event.target.value);
         setUserInput({

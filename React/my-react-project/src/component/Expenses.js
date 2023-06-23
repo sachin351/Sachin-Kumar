@@ -4,7 +4,7 @@ import './Expenses.css';
 function Expenses(props) {
   return (
     <div className='expenses'>
-      <ExpensesFilter />
+      <ExpensesFilter filterByYear = {props.filterByYear}/>
       {props.items.map((item => (
         <ExpenseItem
           key={item.id}

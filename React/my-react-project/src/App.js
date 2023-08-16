@@ -27,6 +27,12 @@ const EXPENSEDATA = [
     amount: 94.12,
     date: new Date(2020, 7, 14),
   },
+  {
+    id: 'e5',
+    title: 'Wooden',
+    amount: 90.12,
+    date: new Date(2020, 3, 14),
+  },
 ]
 
 function App() {

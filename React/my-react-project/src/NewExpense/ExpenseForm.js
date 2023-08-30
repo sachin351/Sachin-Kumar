@@ -23,7 +23,7 @@ const ExpenseForm = ({ onExpenseAdd,onCancel }) => {
         console.log("====>",event.target.value)
         setUserInput({
             ...userInput,
-            enterDate: event.target.value,
+            enterDate: new Date(event.target.value),
         })
     };
     const submitHandler = (event) => {

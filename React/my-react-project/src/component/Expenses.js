@@ -1,6 +1,6 @@
 import ExpensesFilter from "./ExpensesFilter";
 import ExpenseItem from "./ExpenseItem";
-import ExpensesChart from './ExpensesChart';
+import ExpenseChart from './ExpensesChart';
 import './Expenses.css';
 function Expenses(props) {
   const filteredExpenses = props.items.filter((expense) => {
@@ -9,7 +9,7 @@ function Expenses(props) {
   return (
     <div className='expenses'>
       <ExpensesFilter filterByYear={props.filterByYear} />
-      <ExpensesChart expenses={filteredExpenses}/>
+      <ExpenseChart expenses={filteredExpenses}/>
       {props.items.length === 0 ?(
         <p className="no-data">No data found!</p>) : (
           props.items.map((item => (
